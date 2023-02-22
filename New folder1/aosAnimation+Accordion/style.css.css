@@ -1,0 +1,39 @@
+body {
+    height: 300vh;
+}
+
+main .container {
+    padding: 0 100px;
+}
+
+main .container .row .col .box {
+    height: 200px;
+    border-radius: 20px;
+}
+
+main .container .row .col .box img {
+    transition-duration: 2s;
+    border-radius: 20px;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+main .container .row .col .box img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transform: rotate(360deg);
+}
+
+main .container .row .col .box iframe {
+    border-radius: 20px;
+}
+
+.accordion-item {
+    height: 250px;
+}
+
+@media screen and (max-width:1399px) {
+    main .container {
+        padding: 0;
+    }
+}

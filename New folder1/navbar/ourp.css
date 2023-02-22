@@ -1,0 +1,113 @@
+header {
+  height: 70px;
+  border: 1px solid  rgb(230,0,33);;
+  display: flex;
+  align-items: center;
+  background: white
+  
+  
+}
+
+title{
+  color: red;
+}
+.bg-dark {
+  background-color: #2f2e2e !important;
+}
+
+header nav .links {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .links a {
+  color: rgb(230,0,33);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition-duration: 100ms;
+}
+
+header nav .links a:hover {
+  background: red;
+  color: white;
+  transform: scale(1.05);
+}
+
+header nav .burger {
+  display: none;
+}
+
+#logo{
+  z-index: 999999;
+  width: 90px;
+  margin-left: auto;
+}
+
+
+body {
+    background: url(pexels-anna-shvets-5953518.jpg) center/cover no-repeat;
+  }
+  
+
+
+ #gallery{
+    opacity: 50%;
+    background: white;
+    margin-top: 100px;
+    border-radius: 20px;
+    opacity: 99%;
+  }
+
+
+  
+  .video-segment {
+    width: 33.33%;
+    border: 1px solid black;
+  }
+  h2{
+    font-weight: bolder;
+    color: rgb(231,0,33);
+  }
+  
+  footer{
+    background:  rgb(192, 2, 30);
+  }
+
+  @media (max-width: 767.98px) {
+    body{
+        padding-top: 90px;
+    }
+    header{
+        background: rgb(230,0,33);
+    }
+    header nav {
+        max-width: 100% !important;
+    }
+    header nav .links {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background: #2f2e2e;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        text-align: center;
+    }
+    header nav .links a {
+        padding: 14px 0;
+        border-radius: 0;
+        border-top: 1px solid azure;
+    }
+    header nav .links a:hover {
+        transform: scale(1.2);
+    }
+    header nav .burger {
+        display: block;
+        color: azure;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}

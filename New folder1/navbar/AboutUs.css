@@ -1,0 +1,113 @@
+body {
+    background: url(pexels-andré-beltrame-1878346.jpg) center/cover no-repeat;
+  }
+  
+
+
+
+header {
+    height: 70px;
+    border: 1px solid  rgb(230,0,33);;
+    display: flex;
+    align-items: center;
+    background: white
+    
+    
+  }
+  
+  title{
+    color: red;
+  }
+  .bg-dark {
+    background-color: #2f2e2e !important;
+  }
+  
+  header nav .links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header nav .links a {
+    color: rgb(230,0,33);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition-duration: 100ms;
+  }
+  
+  header nav .links a:hover {
+    background: red;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  header nav .burger {
+    display: none;
+  }
+  
+  #logo{
+    z-index: 999999;
+    width: 90px;
+    margin-left: auto;
+  }
+body{
+
+}  
+
+footer{
+    background:  rgb(192, 2, 30);
+    ;
+}
+
+#accordionExample{
+  width: 65%;
+  margin:120px auto;
+
+}
+
+.accordion-button{
+  background:white  !important;
+}
+#about{
+  border-radius: 20px;
+  margin-bottom: 50px;
+  opacity: 15px;
+}
+
+@media (max-width: 767.98px) {
+    body{
+        padding-top: 90px;
+    }
+    header{
+        background: rgb(230,0,33);
+    }
+    header nav {
+        max-width: 100% !important;
+    }
+    header nav .links {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background: #2f2e2e;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        text-align: center;
+    }
+    header nav .links a {
+        padding: 14px 0;
+        border-radius: 0;
+        border-top: 1px solid azure;
+    }
+    header nav .links a:hover {
+        transform: scale(1.2);
+    }
+    header nav .burger {
+        display: block;
+        color: azure;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
